@@ -1,0 +1,135 @@
+
+:root{
+    --blue: #4169E1;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: aliceblue;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    /* When align-items is set to center, it centers the flex items along the cross-axis. If the flex container has a flex-direction value of row, then the cross-axis is vertical, and align-items centers the flex items vertically. On the other hand, if the flex-direction value is column, then the cross-axis is horizontal, and align-items centers the flex items horizontally. */
+    align-items: center;
+    max-width: 370px;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 6px 10px rgba(0,0,0,0.3);
+    border-radius: 24px;
+    padding: 25px;
+    position: relative;
+}
+.container::before{
+    content: '';
+    position: absolute;
+    height: 36%;
+    width: 100%;
+    background-color: var(--blue);
+    top: 0;
+    left: 0;
+    border-radius: 24px 24px 0 0;
+}
+.image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: var(--blue);
+    padding: 3px;
+    bottom: 10px;
+}
+.image .img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    
+}
+.container .text-data{
+    display: flex;
+    flex-direction: column;
+    /* When align-items is set to center, it centers the flex items along the cross-axis. If the flex container has a flex-direction value of row, then the cross-axis is vertical, and align-items centers the flex items vertically. On the other hand, if the flex-direction value is column, then the cross-axis is horizontal, and align-items centers the flex items horizontally. */
+    align-items: center; 
+}
+.text-data .name{
+    font-size: 18px;
+    font-weight: 500;
+}
+.text-data .job{
+    font-size: 12px;
+    font-weight: 400;
+}
+.container .social-icons{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+
+}
+.social-icons .icon{
+    background-color: var(--blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 34px;
+    width: 34px;
+    color: #fff;
+    border-radius: 50%;
+    margin: 0 8px;
+    text-decoration: none;    
+}
+
+.container .sub-msg{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+.sub-msg .btn{
+    background-color: var(--blue);
+    padding: 8px 24px;
+    margin: 0 10px;
+    border-radius: 24px;
+    border: none;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.sub-msg .btn:hover{
+    background-color: #033be2;
+}
+.container .analytics{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+.analytics .data{
+    display: flex;
+    align-items: center;
+    color: #333;
+    padding: 0 20px;
+    border-right: 2px solid #e7e7e7;
+}
+.data i{
+    font-size: 18px;
+    margin-right: 6px;
+}
+.data:last-child{
+    border-right: none;
+}
+
+
